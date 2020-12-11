@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1607704871 source:c:\users\solan\onedrive\documents\efrei\projet_huffman_bonne_versione\compression.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"Compression.h"
+
+1607703868 c:\users\solan\onedrive\documents\efrei\projet_huffman_bonne_versione\compression.h
+	"Traduction.h"
+
+1607705483 source:c:\users\solan\onedrive\documents\efrei\projet_huffman_bonne_versione\arbre.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Arbre.h"
+
+1607705497 c:\users\solan\onedrive\documents\efrei\projet_huffman_bonne_versione\arbre.h
+	"Liste.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1607705483 c:\users\solan\onedrive\documents\efrei\projet_huffman_bonne_versione\liste.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1607705483 source:c:\users\solan\onedrive\documents\efrei\projet_huffman_bonne_versione\liste.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Liste.h"
+
+1607702778 source:c:\users\solan\onedrive\documents\efrei\projet_huffman_bonne_versione\traduction.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"Traduction.h"
+
+1607707622 source:c:\users\solan\onedrive\documents\efrei\projet_huffman_bonne_versione\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Liste.h"
+	"Arbre.h"
+	"Traduction.h"
+	"Compression.h"
+
+1607702423 c:\users\solan\onedrive\documents\efrei\projet_huffman_bonne_versione\traduction.h
+	"Liste.h"
+
