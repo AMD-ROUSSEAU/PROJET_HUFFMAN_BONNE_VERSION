@@ -3,7 +3,7 @@
 #include <math.h>
 #include "Liste.h"
 
-//Fonction qui cr�e un noeud
+//Fonction qui cree un noeud
 Node* create_elem(int car,int occ)
 {
     Node* new_node=(Node*)malloc(sizeof(Node));
@@ -15,11 +15,10 @@ Node* create_elem(int car,int occ)
     return new_node;
 }
 
-//Fonction qui permet d'incr�menter l'occurrence d'un noeud existant dans la liste
+//Fonction qui permet d'incrementer l'occurrence d'un noeud existant dans la liste
 //Retourne l'addresse du noeud s'il est present
 //Retourne NULL si le noeud n'est pas present
 Node* increment_elem(Node* list_huffman,int caractere){
-    //printf("Entr�e dans increment_elem\n");
     while(list_huffman != NULL){
         if ((list_huffman->caractere)==caractere){
             list_huffman->occurrence++;
@@ -30,23 +29,21 @@ Node* increment_elem(Node* list_huffman,int caractere){
     return NULL;
 }
 
-//Fonction qui cr�e une liste contenant les caracteres presents dans un fichier texte et leurs occurrences
+//Fonction qui cree une liste contenant les caracteres presents dans un fichier texte et leurs occurrences
 //Si le caractere courant n'est pas dans la liste : creation d'un noeud contenant le caractere et ajout de ce noeud dans la liste
 //Si le caractere courant est dans la liste : incrementation de son occurrence
-Node* create_list_char(char* file_in){/*++++++++MODIF NOM+++++++++++*/
+Node* create_list_char(char* file_in){
     Node* mylist=NULL;
     Node* temp=NULL;//liste temporaire
-    int car; //Boubeuer char car;
+    int car;
     FILE* file=fopen(file_in,"r");
 
-    //printf("Entr�e dans create_list_huffman\n");
-    if (file==NULL){ //probl�me d'ouverture du fichier
+    if (file==NULL){ //probleme d'ouverture du fichier
         fprintf(stderr, "-------------------ERREUR D'OUVERTURE-------------------");
     }
 
-    while((car=fgetc(file)) != EOF){//Tant que nous ne sommes pas arriv�s � la fin du fichier texte
+    while((car=fgetc(file)) != EOF){//Tant que nous ne sommes pas arrives a la fin du fichier texte
         if (mylist==NULL){//Si la liste est vide
-            //mylist=create_elem(fgetc(file),1);
             mylist=create_elem(car,1);
             temp=mylist;
         }
@@ -63,7 +60,6 @@ Node* create_list_char(char* file_in){/*++++++++MODIF NOM+++++++++++*/
 
 void print_list(Node* mylist)
 {
-    //printf("Entr�e dans print_list\n");
     if(mylist==NULL)
     {
         return;
@@ -71,7 +67,7 @@ void print_list(Node* mylist)
     else
     {
         while(mylist!=NULL){
-            printf("[%d][%d] -> \n",mylist->caractere, mylist->occurrence);/*!!!!!!!!!!Modif!!!!!!!!!!!*/
+            printf("[%d][%d] -> \n",mylist->caractere, mylist->occurrence);
             mylist=mylist->next_elem;
         }
     }
