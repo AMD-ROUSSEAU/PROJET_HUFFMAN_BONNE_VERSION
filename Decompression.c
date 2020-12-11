@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "Compression.h"
+
 #include "Decompression.h"
 
 int find_ascii(char* code_lettre, code_car* dico)
