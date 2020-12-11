@@ -3,6 +3,6 @@
 
 #include "Compression.h"
 
-decompress_file(file_decompress,file_compressed,dictionary);
+void decompress_file(char *file_decomp,char* file_comp,code_car* dico);
 
 #endif // DECOMPRESSION_H_INCLUDED
