@@ -2,12 +2,12 @@
 #define LISTE_H_INCLUDED
 
 
-//Définition de la structure Node
+//DÃ©finition de la structure Node
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-#define length_code 100/*++++++++AJOUT+++++++++++*/
+#define length_code 100
 
 typedef struct Node{
     int caractere;
@@ -17,9 +17,9 @@ typedef struct Node{
     struct Node* right;
 }Node;
 
-Node* create_elem(int car,int occ);/*++++++++MODIF++++++++++*/
+Node* create_elem(int car,int occ);
 Node* increment_elem(Node* list_huffman,int caractere);
-Node* create_list_char(char* file_in);/*++++++++MODIF NOM+++++++++++*/
+Node* create_list_char(char* file_in);
 void print_list(Node* mylist);
 int nb_element_list(Node* mylist);
 
