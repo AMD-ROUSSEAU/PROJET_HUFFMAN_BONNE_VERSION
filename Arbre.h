@@ -7,14 +7,12 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define length_code 100/*++++++++AJOUT+++++++++++*/
-
-
+#define length_code 100
 
 Node* smaller_element(Node* mylist);
-Node* delete_smaller(Node* list, Node* smaller);/*++++++++AJOUT+++++++++++*/
-Node* create_tree_huffman(Node* list_node);/*++++++++AJOUT+++++++++++*/
-void print_tree(Node* tree);/*++++++++AJOUT+++++++++++*/
+Node* delete_smaller(Node* list, Node* smaller);
+Node* create_tree_huffman(Node* list_node);
+void print_tree(Node* tree);
 
 
 #endif // ARBRE_H_INCLUDED
