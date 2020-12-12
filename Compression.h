@@ -1,6 +1,6 @@
 #ifndef COMPRESSION_H_INCLUDED
 #define COMPRESSION_H_INCLUDED
-#include "Traduction.h"
+#include "Dictionnaire.h"
 
 #define length_code 100
 
@@ -10,9 +10,8 @@ typedef struct code_car{
   struct code_car* next;
 }code_car;
 
-void storage_letter(FILE* dico,Node* mytree,char* path);
-void Storage_Dictionary(Node* mytree,char* Dico_name);
 code_car* read_dico(char* dico);
+code_car* create_elem_dic();
 char* find_code(code_car* dico_list,char car);
 void compression_file(char* file_text,char* compressed, code_car* memory_dico);
 
